@@ -1,0 +1,26 @@
+.quality__container{
+  padding: 176px 85px;
+  color: rgba(254, 252, 247, 1);
+  position: relative;
+  background-image: url(../../img/quality-img.png);
+  background-repeat: no-repeat;
+  background-position:top 0 right 85px;
+
+
+  &::before{
+    @include section-bg;
+    height: 474px;
+    bottom: 0;
+  }
+}
+.quality__texts{
+  width: 540px;
+}
+.quality__title{
+  @include title-style(900,40px,48px);
+  margin-bottom: 32px;
+}
+.quality__desc{
+  @include desc-style(400,16px,26px);
+  opacity: 0.8;
+}

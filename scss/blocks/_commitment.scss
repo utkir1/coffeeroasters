@@ -1,0 +1,19 @@
+.commitment__container{
+  padding: 168px 85px;
+  background-image: url(../../img/bitmap.jpg);
+  background-repeat: no-repeat;
+  background-position: top 168px left 85px;
+}
+.commitment__texts{
+ width: 540px;
+ padding: 90px 0;
+ margin-left: auto;
+}
+.commitment__title{
+  @include title-style(900,40px,48px);
+  margin-bottom: 32px;
+}
+.commitment__desc{
+  @include desc-style(400,16px,26px);
+  opacity: 0.8;
+}
