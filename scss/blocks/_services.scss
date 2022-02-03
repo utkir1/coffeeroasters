@@ -1,0 +1,12 @@
+.services__container{
+ padding: 100px 85px 200px;
+}
+.services__title{
+  @include title-style(900,24px,32px);
+  color: rgba(131, 136, 143, 1);
+  margin-bottom: 80px;
+}
+.services__btn{
+  @include main-btn;
+  margin-top: 64px;
+}

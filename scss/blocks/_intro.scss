@@ -1,0 +1,23 @@
+.intro__container{
+  padding: 117px 85px;
+  background-image: url(../img/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius:  10px;
+  color: $white;
+}
+.intro__title{
+  @include title-style(900,72px,72px);
+  width: 493px;
+  margin-bottom: 32px;
+  display: block;
+}
+.intro__desc{
+  @include desc-style(400,16px,26px);
+  width: 445px;
+  margin-bottom: 56px;
+  opacity: 0.8;
+}
+.intro__btn{
+  @include main-btn;
+}

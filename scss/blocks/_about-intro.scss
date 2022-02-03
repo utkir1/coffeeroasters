@@ -1,0 +1,16 @@
+.about-intro__container{
+  padding: 137px 85px;
+  background-image: url(../../img/about-intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: $white;
+}
+.about-intro__title{
+  @include title-style(900,40px,48px);
+  margin-bottom: 24px;
+}
+.about-intro__desc{
+  @include desc-style(400,16px,26px);
+  max-width: 445px;
+
+}

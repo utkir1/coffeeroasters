@@ -1,0 +1,32 @@
+.site-nav__list{
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+.site-nav__item{
+margin-right: 33px;
+
+&:last-child{
+  margin-right: 0px;
+}
+}
+.site-nav__item-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color:  #83888F;
+  letter-spacing: 0.923077px;
+
+  &:hover{
+   color: rgba(51, 61, 75, 1);
+  }
+}
+.site-nav__item-link--footer{
+  color: rgba(131, 136, 143, 1);
+
+  &:hover{
+  color: rgba(254, 252, 247, 1);
+  }
+}
