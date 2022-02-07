@@ -1,8 +1,8 @@
 .how-work{
-max-width: 1045px;
+ max-width: 1045px;
 }
 .how-work__box{
-  width: 791px;
+  max-width: 791px;
   margin-bottom: 67px;
   display: flex;
   justify-content: space-between;
@@ -27,11 +27,11 @@ max-width: 1045px;
 }
 .how-work__item{
   margin-right: 95px;
-  width: 285px;
+  max-width: 285px;
   color: rgba(51, 61, 75, 1);
 
   &:last-child{
-    margin-right: 0px;
+  margin-right: 0px;
   }
 }
 .how-work__number{
@@ -41,9 +41,15 @@ max-width: 1045px;
 }
 .how-work__item-title{
   @include title-style(900,32px,36px);
-  width: 255px;
+  max-width: 255px;
   margin-bottom: 42px;
 }
 .how-work__item-desc{
   @include desc-style(400,16px,26px);
+}
+
+
+
+@media only screen and (max-width:1310px){
+
 }

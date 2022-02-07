@@ -1,5 +1,5 @@
 .intro__container{
-  padding: 117px 85px;
+  padding: 117px 0px 117px 85px;
   background-image: url(../img/intro-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -8,16 +8,42 @@
 }
 .intro__title{
   @include title-style(900,72px,72px);
-  width: 493px;
+  max-width: 493px;
   margin-bottom: 32px;
   display: block;
 }
 .intro__desc{
   @include desc-style(400,16px,26px);
-  width: 445px;
+  max-width: 445px;
   margin-bottom: 56px;
   opacity: 0.8;
 }
 .intro__btn{
   @include main-btn;
+}
+@media only screen and(max-width:1310px){
+.intro{
+
+&__container{
+  padding: 104px 0px 104px 58px;
+}
+&__title{
+  @include title-style(900,48px,48px);
+  margin-bottom: 24px;
+  width: 329px;
+}
+
+&__desc{
+  @include desc-style(400,15px,25px);
+  margin-bottom: 40px;
+  width: 398px;
+}
+}
+}
+@media only screen and(width:1310px){
+  .intro__container{
+    background-image: url(../../img/intro-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }

@@ -20,7 +20,7 @@
 }
 @mixin main-btn {
   border: none;
-  width: 217px;
+  min-width: 217px;
   height: 56px;
   font-family: "Fraunces","Arial",sans-serif;
   font-weight: 900;

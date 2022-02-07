@@ -1,11 +1,23 @@
 .header{
   padding: 44px 0;
-  // background-color: #FEFCF7;
 }
 .header__container{
   display: flex;
   justify-content: space-between;
 }
-.site-link{
+.header__site-link{
   display: block;
+}
+
+
+@media only screen and(max-width:1310px){
+ .header{
+   padding-top: 40px;
+   padding-bottom: 54px;
+ }
+
+ &__site-link{
+   width: 235px;
+   height: 25px;
+ }
 }
