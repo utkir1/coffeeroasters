@@ -1,9 +1,10 @@
 .intro__container{
   padding: 117px 0px 117px 85px;
-  background-image: url(../img/intro-bg.jpg);
+  background-image: url(../../img/intro-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius:  10px;
+  background-size: cover;
+  border-radius: 10px;
   color: $white;
 }
 .intro__title{
@@ -19,31 +20,47 @@
   opacity: 0.8;
 }
 .intro__btn{
-  @include main-btn;
+  @include main-link;
 }
 @media only screen and(max-width:1310px){
-.intro{
-
-&__container{
+.intro__container{
   padding: 104px 0px 104px 58px;
+  background-image: url(../../img/intro-bg-tablet.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-&__title{
+.intro__title{
   @include title-style(900,48px,48px);
   margin-bottom: 24px;
   width: 329px;
 }
-
-&__desc{
+.intro__desc{
   @include desc-style(400,15px,25px);
   margin-bottom: 40px;
-  width: 398px;
+  max-width: 398px;
 }
 }
-}
-@media only screen and(width:1310px){
+
+@media only screen and(max-width:719px){
   .intro__container{
-    background-image: url(../../img/intro-bg-tablet.jpg);
+    padding: 100px 24px;
+    background-image: url(../../img/intro-bg-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+  }
+  .intro__title{
+    @include title-style(900,40px,40px);
+    margin-bottom: 24px;
+    width: 279px;
+    text-align: center;
+  }
+  .intro__desc{
+    @include desc-style(400,15px,25px);
+    margin-bottom: 39px;
+    max-width: 279px;
+    text-align: center;
+  }
+  .intro__btn{
+    margin-left: 31px;
   }
 }

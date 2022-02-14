@@ -7,6 +7,32 @@
   margin-bottom: 80px;
 }
 .services__btn{
-  @include main-btn;
+  @include main-link;
   margin-top: 64px;
+}
+@media only screen and (max-width:1310px){
+.services__container{
+  padding: 0;
+  padding-bottom: 144px;
+}
+.services__title{
+  margin-bottom: 40px;
+}
+.services__btn{
+  margin-top: 44px;
+}
+}
+@media only screen and (max-width:719px){
+.services__container{
+    padding: 0;
+    padding-bottom: 120px;
+}
+.services__title{
+    margin-bottom: 80px;
+}
+.services__btn{
+    margin-top: 79px;
+    margin-left: 35px;
+
+}
 }

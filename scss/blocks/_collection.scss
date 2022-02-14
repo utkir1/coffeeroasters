@@ -1,15 +1,16 @@
 .collection{
-  padding: 262px 0 200px 0;
-  // background-color: #FEFCF7;
+  padding-top: 262px;
 }
 .collection__container{
+  padding-bottom:200px;
   position: relative;
 }
 .collection__title{
   @include title-style(900,150px,1);
   text-align: center;
-  max-width: 1072px;
+  max-width: 100%;
   background-color:  #83888F;
+  opacity: 0.5;
   background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -36,27 +37,22 @@
     margin-right: 0px;
   }
 }
-
 .collection__item-title{
-  @include title-style;
+  @include title-style(400,24px,32px);
   margin-bottom: 24px;
   text-align: center;
-  font-size: 24px;
-  line-height: 32px;
   color: $black;
 }
 .collection__img{
   display: block;
   margin-bottom: 70px;
-
 }
-.collection__desc{
+.collection__item-desc{
   @include desc-style;
   text-align: center;
   line-height: 26px;
   color: $black;
 }
-
 @media only screen and (max-width:1310px){
 .collection{
     padding: 203px 0 144px 0;
@@ -72,12 +68,80 @@
     }
   }
 .collection__list{
-  display: inline-block;
-  margin:  0 auto;
+flex-direction: column;
+align-items: center;
 }
 .collection__item{
   display: flex;
   justify-content: space-between;
-  width: calc(100%);
+  max-width:100%;
+  margin-right: 0;
+  margin-bottom: 32px;
 }
+.collection__texts{
+  max-width: 100%;
+  align-items:  stretch;
+  padding-top: 32px;
+}
+.collection__item-title{
+  @include title-style(400,24px,32px);
+  margin-bottom: 24px;
+  text-align: left;
+}
+.collection__item-desc{
+  @include desc-style(400,15px,25px);
+  max-width: 282px;
+  text-align: left;
+}
+.collection__img{
+  margin-bottom: 0px;
+  margin-right: 36px;
+}
+
+}
+@media only screen and (max-width:719px){
+  .collection{
+    padding: 205px 0 120px 0;
+
+    &__title{
+      @include title-style(900,40px,72px);
+      text-align: center;
+      width: 100%;
+      opacity: 1;
+      top: -85px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  .collection__list{
+    flex-direction: column;
+    align-items: center;
+    }
+    .collection__item{
+      flex-direction: column;
+      margin-bottom: 48px;
+
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
+    .collection__texts{
+      padding-top: 24px;
+    }
+    .collection__item-title{
+      @include title-style(400,24px,32px);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .collection__item-desc{
+      @include desc-style(400,15px,25px);
+      max-width: 282px;
+      text-align: center;
+    }
+    .collection__img{
+      margin-right: 0px;
+      margin-bottom: 0px;
+      width: 100%;
+    }
 }

@@ -1,5 +1,11 @@
 .header{
   padding: 44px 0;
+  width: 100%;
+  background-color: rgba(254, 252, 247, 1);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
 }
 .header__container{
   display: flex;
@@ -8,16 +14,88 @@
 .header__site-link{
   display: block;
 }
+.header__burger{
+  display: none;
+  padding: 0px;
+  border: none;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+
+  &::before,
+  &::after,
+  &-inner{
+    width: 100%;
+    height:3px;
+    display: block;
+    margin-bottom: 3px;
+    border-radius: 2px;
+    background-color: rgba(51, 61, 75, 1);
+    transition: 0.2s ease all;
+    content: "";
+  }
+
+  &::after{
+    margin-bottom: 0px;
+  }
+
+}
+
+
+.header__burger-opened{
+  position: relative;
+
+  & .header__burger-inner{
+    display:none;
+  }
+  &::before,
+  &::after{
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  &::before{
+    transform: translate(-50% ,-50%) rotate(45deg);
+    margin-bottom: 0px;
+  }
+  &::after{
+    transform: translate(-50% ,-50%) rotate(-45deg);
+  }
+}
+
 
 
 @media only screen and(max-width:1310px){
+.container{
+  max-width: 719px;
+}
  .header{
    padding-top: 40px;
    padding-bottom: 54px;
- }
+
 
  &__site-link{
    width: 235px;
    height: 25px;
  }
+}}
+
+@media only screen and (max-width:719px){
+  .header__burger{
+    display: block;
+  }
+  .container{
+    max-width: 357px;
+  }
+   .header{
+     padding-top: 32px;
+     padding-bottom: 41px;
+
+
+   &__site-link{
+     width: 162px;
+     height: 17px;
+   }
+  }
 }

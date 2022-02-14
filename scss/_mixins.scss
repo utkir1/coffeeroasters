@@ -18,9 +18,9 @@
   font-size: $size;
   line-height: $lnheight;
 }
-@mixin main-btn {
+@mixin main-link {
   border: none;
-  min-width: 217px;
+  min-width:217px;
   height: 56px;
   font-family: "Fraunces","Arial",sans-serif;
   font-weight: 900;

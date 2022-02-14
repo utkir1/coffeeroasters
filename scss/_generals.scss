@@ -4,6 +4,7 @@
 body{
   margin: 0px;
   padding: 0px;
+  margin-top: 113px;
   font-family: 'Barlow', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -20,4 +21,16 @@ body{
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+
+@media only screen and (max-width:1310px){
+  body{
+    margin-top: 119px;
+  }
+}
+@media only screen and (max-width:719px){
+  body{
+    margin-top: 90px;
+  }
 }
